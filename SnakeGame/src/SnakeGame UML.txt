@@ -1,0 +1,60 @@
++------------------+
+|      Snake       |
++------------------+
+| -                |
++------------------+
+| +main(String[])  |
++------------------+
+
+
++----------------------+
+|      GameFrame       |
++----------------------+
+| -                    |
++----------------------+
+| +GameFrame()         |
++----------------------+
+| #add(GamePanel)      |
+| #setTitle(String)    |
+| #setDefaultCloseOperation(int) |
+| #setResizable(boolean) |
+| #pack()              |
+| #setVisible(boolean) |
+| #setLocationRelativeTo(Component) |
++----------------------+
+
+
++---------------------------+
+|         GamePanel         |
++---------------------------+
+| -SCREEN_WIDTH: int        |
+| -SCREEN_HEIGHT: int       |
+| -UNIT_SIZE: int           |
+| -GAME_UNITS: int          |
+| -DELAY: int               |
+| -x: int[]                 |
+| -y: int[]                 |
+| -bodyParts: int           |
+| -applesEaten: int         |
+| -appleX: int              |
+| -appleY: int              |
+| -direction: char          |
+| -running: boolean         |
+| -timer: Timer             |
+| -random: Random           |
++---------------------------+
+| +GamePanel()              |
+| +startGame()              |
+| +paintComponent(Graphics) |
+| +draw(Graphics)           |
+| +newApple()               |
+| +move()                   |
+| +checkApple()             |
+| +checkCollisions()        |
+| +gameOver(Graphics)       |
+| +actionPerformed(ActionEvent) |
++---------------------------+
+| -MyKeyAdapter             |
++---------------------------+
+| +MyKeyAdapter.keyPressed(KeyEvent) |
++---------------------------+
